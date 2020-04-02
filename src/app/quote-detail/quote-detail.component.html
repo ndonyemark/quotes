@@ -1,0 +1,29 @@
+<div class="card mb-3 p-3">
+  <div class="card-header bg-dark text-danger text-center">
+      {{ quote.quote }}
+  </div>
+  <div class="card-body">
+      <div class="row">
+          <div class="col">
+              <i>Author: {{ quote.author }}</i>
+          </div>
+          <div class="col">
+              <i>Date-submitted: {{ quote.datePosted|date  }}</i>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              <i>Submitted-By: {{ quote.submitter }}</i>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+          <button class="btn btn-outline-success" (click)='upvote()'>like: {{ quote.likes }}</button>
+          <button class="btn btn-outline-danger float-right" (click)='downvote()'>dislike: {{ quote.dislikes }}</button>
+      </div>
+  </div>
+  <div class="card-footer">
+      <button class="btn btn-danger btn-block" (click) = "delQuote(true)">Delete Quote</button>
+  </div>
+</div>
