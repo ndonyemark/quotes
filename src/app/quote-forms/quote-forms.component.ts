@@ -8,6 +8,7 @@ import { Quotez } from '../quotez'
 })
 export class QuoteFormsComponent implements OnInit {
 
+  newQuote = new Quotez(0, '', '', '', new Date() , 0, 0);
   constructor() { }
 
   ngOnInit(): void {
