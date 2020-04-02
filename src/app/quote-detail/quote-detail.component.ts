@@ -9,6 +9,12 @@ import { Quotez } from '../quotez';
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote:Quotez;
+
+  @Output() isReady = new EventEmitter<boolean>();
+  
+  delQuote(ready: boolean){
+    this.isReady.emit(ready);
+  }
   constructor() { }
 
   ngOnInit(): void {
