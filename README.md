@@ -1,6 +1,15 @@
 # Quote
+## By Ndonye Mark
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## Description
+This is a simple Angular  application that allows you to create quotes, upvote, downvote or delete a quote.
+
+## Live Page 
+
+https://ndonyemark.github.io/quotes/
+
+## User
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
 ## Development server
 
@@ -25,3 +34,31 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone ```https://github.com/ndonyemark/quotes```
+
+* cd Quotes-app
+
+* code . or atom . based on the text editor you have.
+
+## Technologies Used
+
+* [HTML5](https://github.com/topics/html5)
+* [CSS](https://github.com/topics/css3)
+* [Angular]
+* markdown
+* [Bootstrap](https://github.com/topics/bootstrap)
+
+## Known Bugs
+* Highlight directive property does not work properly
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [ndonyemark@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2019 **Ndonye Mark**

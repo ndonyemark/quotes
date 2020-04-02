@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quotez } from '../quotez'
+import { Quotez } from '../quotez';
 import { from } from 'rxjs';
 
 @Component({
@@ -9,7 +9,9 @@ import { from } from 'rxjs';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes: Quotez[] = [];
+  quotes: Quotez[] = [
+    new Quotez(1, 'code like a maniac as long as it solves and makes sense', 'misty', 'Mark', new Date(), 0, 0),
+  ];
 
   deleteQuote(isReady, index) {
     if (isReady) {
