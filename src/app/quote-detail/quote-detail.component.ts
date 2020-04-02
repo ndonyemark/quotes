@@ -8,12 +8,16 @@ import { Quotez } from '../quotez';
 })
 export class QuoteDetailComponent implements OnInit {
 
-  @Input() quote:Quotez;
+  @Input() quote: Quotez;
 
   @Output() isReady = new EventEmitter<boolean>();
-  
-  delQuote(ready: boolean){
+
+  delQuote(ready: boolean) {
     this.isReady.emit(ready);
+  }
+
+  upvote(){
+    this.quote.likes += 1;
   }
   constructor() { }
 
