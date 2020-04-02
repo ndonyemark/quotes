@@ -10,6 +10,7 @@ import { from } from 'rxjs';
 export class QuoteComponent implements OnInit {
 
   quotes:Quotez[] = [];
+  
   constructor() { }
 
   ngOnInit(): void {
