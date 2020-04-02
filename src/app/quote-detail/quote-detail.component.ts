@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Quotez } from '../quotez';
 
 @Component({
@@ -8,6 +8,7 @@ import { Quotez } from '../quotez';
 })
 export class QuoteDetailComponent implements OnInit {
 
+  @Input() quote:Quotez;
   constructor() { }
 
   ngOnInit(): void {
