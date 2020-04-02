@@ -2,8 +2,8 @@
   <h1 class="text-center text-danger">QUOTE_QUOTA</h1>
   <div class="row">
     <div class="col-lg-12">
-      <app-quote-forms></app-quote-forms>
-    </div>
+      <app-quote-forms (addQuote) = "addNewQuote($event)"></app-quote-forms>
+  </div>
   </div>
 </div>
 
